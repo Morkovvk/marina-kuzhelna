@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="author" content="Marina Kuzhelna | Анімаії" />
+    <meta
+      name="keywords"
+      content="animation, motion graphics, visual effects, character animation, 3D animation, 2D animation, VFX, CGI, digital art, storytelling, motion design"
+    />
+    <meta
+      name="description"
+      content="Explore stunning animations and motion graphics created by a professional animator. High-quality visual effects, character animation, and storytelling through motion."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Marina Kuzhelna</title>
+    <link rel="icon" href="image/anim.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+<body>
+    <header class="header hidden">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img class="header-image" src="image/logo.JPG" alt="logo">
+                <span data-i18n="header_name">Марина Кужельна</span>
+            </a>
+            <nav class="header__nav">
+                <a class="header_link" href="#" data-i18n="nav_home">Головна</a>
+                <a class="header_link" href="#screen1" data-i18n="nav_animations">Анімації</a>
+                <a class="header_link" href="#contact" data-i18n="nav_contacts">Контакти</a>
+            </nav>
+            <div class="lang-switcher">
+                <button class="lang-btn">
+                    <span class="current-lang">УКР</span>
+                    <span class="arrow">▾</span>
+                </button>
+
+                <ul class="lang-dropdown">
+                    <li data-lang="uk">УКР</li>
+                    <li data-lang="en">EN</li>
+                </ul>
+            </div>
+            <button class="menu-icon " type="button">
+                <div class="menu-icon__line"></div>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome__desc">
+                    <h1 class="welcome__title hero-text" data-i18n="hi_1">
+                        Привіт, я Марина,
+                        режисер анімації з Києва
+                    </h1>
+                    <p class="welcome__text hero-text" data-i18n="p_desc">
+                        Завдяки анімації ви можете потрапити у свій світ і запросити туди друзів!
+                    </p>
+                    <button class="btn" type="button" onclick="window.location.href='pages/details.html'"
+                        data-i18n="b_me">Про
+                        мене</button>
+                </div>
+                <img src="image/marynaa.jpg" alt="photo Maryna" class="welcome__img">
+            </div>
+        </section>
+
+        <section id="screen1" class="listing active">
+            <div class="container f hero-text">
+                <h2 class="listing__title " id="gallery-title" data-i18n="galler">Мої роботи</h2>
+                <div class="listing__wrapper">
+                    <a id="the.broken.windows.theory" href="pages/tbwt.html" class="item-link"
+                        data-category="the.broken.windows.theory">
+                        <figure class="listing__img-wrapper">
+                            <img src="image/the.broken.windows.theory/the.broken.jpg" alt="Теорія розбитих вікон">
+                            <figcaption class="item-label">
+                                <h4 data-i18n="name_tbwt">теорія розбитих<br>вікон</h4>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a id="myr" href="pages/myr.html" class="item-link" data-category="МУР">
+                        <figure class="listing__img-wrapper">
+                            <img src="image/myr/myr.JPG" alt="МУР">
+                            <figcaption class="item-label">
+                                <h4 data-i18n="name_myr">МУР</h4>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a id="schmalgauzen" href="pages/schmalgauzen.html" class="item-link" data-category="Schmalgauzen">
+                        <figure class="listing__img-wrapper">
+                            <img src="image/schmalgauzen/schmalgauzen.JPG" alt="Schmalgauzen">
+                            <figcaption class="item-label">
+                                <h4>Schmalgauzen</h4>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a id="licht" href="pages/licht.html" class="item-link" data-category="Licht">
+                        <figure class="listing__img-wrapper">
+                            <img src="image/licht/licht.jpg" alt="Licht">
+                            <figcaption class="item-label">
+                                <h4>Licht</h4>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a id="university" href="pages/university.html" class="item-link" data-category="University">
+                        <figure class="listing__img-wrapper">
+                            <img src="image/university/university.jpg" alt="University">
+                            <figcaption class="item-label">
+                                <h4 data-i18n="name_uni">Університет</h4>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a id="zavirshovani" href="pages/zavirshovani.html" class="item-link" data-category="Zavirshovani">
+                        <figure class="listing__img-wrapper">
+                            <img src="image/zavirshovani/zavirsh.JPG" alt="Zavirshovani">
+                            <figcaption class="item-label">
+                                <h4 data-i18n="name_zav">Завіршовані</h4>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a id="vivienmort" href="pages/vivienmort.html" class="item-link" data-category="VivienMort">
+                        <figure class="listing__img-wrapper">
+                            <img src="image/vivien_mort/vi.JPG" alt="VivienMort">
+                            <figcaption class="item-label">
+                                <h4>Vivien Mort</h4>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="screen2" class="work-details">
+            <div class="container hero-text">
+                <h2 id="work-title"></h2>
+                <div class="screenshots-wrapper"></div>
+                </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container hero-text">
+                <h2 class="title contact_title" data-i18n="contact_tr">Для зв'язку</h2>
+                <a href="mailto:mkuzhelna@gmail.com" type="email" class="btn email_btn" target="_blank">Email</a>
+                <a href="http://www.instagram.com/marinka19.07?igsh=eXUxNWFtNmw3NTdx" type="link" class="btn inst_btn"
+                    target="_blank">Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer hero-text">
+        <div class="container">
+            <p class="footer_copy">Made by <span>Liudmyla Palchynska</span> - Copyright 2025</p>
+            <div class="socials">
+                <a href="#" class="socials_link" target="_blank">
+                    <img src="image/icons8-email-50.png" alt="" class="socials_img">
+                </a>
+                <a href="#" class="socials_link" target="_blank">
+                    <img src="image/icons8-instagram-logo.svg" alt="" class="socials_img">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/lang.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="author" content="Marina Kuzhelna | Анімаії" />
+    <meta
+      name="keywords"
+      content="animation, motion graphics, visual effects, character animation, 3D animation, 2D animation, VFX, CGI, digital art, storytelling, motion design"
+    />
+    <meta
+      name="description"
+      content="Explore stunning animations and motion graphics created by a professional animator. High-quality visual effects, character animation, and storytelling through motion."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Myr</title>
+    <link rel="icon" href="../image/anim.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <header class="header hidden">
+      <!-- NAVBAR -->
+      <div class="container">
+        <nav class="header__nav">
+          <a href="../index.html" class="logo" data-i18n="nav_home">Головна</a>
+          <a
+            href="tbwt.html"
+            id="the.broken.windows.theory"
+            data-i18n="name_tbwt"
+            >теорія розбитих вікон</a
+          >
+          <a href="myr.html" id="myr" data-i18n="name_myr">Myр</a>
+          <a href="schmalgauzen.html" id="schmalgauzen">Schmalgauzen</a>
+          <a href="licht.html" id="licht">Licht</a>
+          <a href="university.html" id="university" data-i18n="name_uni"
+            >Університет</a
+          >
+          <a href="zavirshovani.html" id="zavirshovani" data-i18n="name_zav"
+            >Завіршовані</a
+          >
+          <a href="vivienmort.html" id="vivienmort">Vivien Mort</a>
+        </nav>
+
+        <button class="menu-icon" type="button">
+          <div class="menu-icon__line"></div>
+        </button>
+      </div>
+    </header>
+
+    <main class="main1">
+      <section id="screen2" class="hero-text">
+        <h1 class="listing__title" data-i18n="name_myr">Myр</h1>
+
+        <div class="screenshots-wrapper">
+          <figure>
+            <img src="../image/myr/slovo_1.jpg" alt="slovo1" />
+            <img src="../image/myr/slovo_2.jpg" alt="slovo2" />
+            <img src="../image/myr/slovo_3.jpg" alt="slovo3" />
+            <figcaption class="item-label">
+              <h3 data-i18n="m_bs">Будинок "Слово"</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="container item-label">
+          <button
+            data-video="../media/slovo.mp4"
+            class="btn open-video"
+            data-i18n="look"
+          >
+            Переглянути анімацію
+          </button>
+          <button
+            class="btn back-btn"
+            data-target="../index.html#gallery-title"
+            data-i18n="b_back"
+          >
+            Повернутися на головну
+          </button>
+        </div>
+
+        <!-- Модальне вікно -->
+        <div id="videoModal" class="modal">
+          <div class="modal-content">
+            <button class="close"></button>
+            <video controls controlsList="nodownload" disablePictureInPicture>
+              <source id="videoSourse" src="" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        <div class="screenshots-wrapper">
+          <figure>
+            <img src="../image/myr/poem_1.JPG" alt="poema_vitry" />
+            <img src="../image/myr/poem_2.jpg" alt="poema_vitry" />
+            <img src="../image/myr/poem_3.jpg" alt="poema_vitry" />
+            <figcaption class="item-label">
+              <h3 data-i18n="m_poem">Поема вітру</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="container item-label">
+          <a
+            class="btn"
+            href="https://www.instagram.com/reel/DATKzbTNhaQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="look"
+            >Переглянути анімацію</a
+          >
+          <button
+            class="btn back-btn"
+            data-target="../index.html#gallery-title"
+            data-i18n="b_back"
+          >
+            Повернутися на головну
+          </button>
+        </div>
+
+        <div class="screenshots-wrapper">
+          <figure>
+            <img src="../image/myr/koriolan_1.jpg" alt="korriolan" />
+            <img src="../image/myr/koriolan_2.jpg" alt="korriolan" />
+            <img src="../image/myr/koriolan_3.jpg" alt="korriolan" />
+            <figcaption class="item-label">
+              <h3 data-i18n="m_coriolan">Коріолан</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="container item-label">
+          <a
+            class="btn"
+            href="https://www.instagram.com/reel/DGJXz2XuX8m/?igsh=MThpMjRyNHNhZGM5YQ=="
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="look"
+            >Переглянути анімацію</a
+          >
+          <button
+            class="btn back-btn"
+            data-target="../index.html#gallery-title"
+            data-i18n="b_back"
+          >
+            Повернутися на головну
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="../js/main.js"></script>
+    <script src="../js/works.js"></script>
+    <script src="../js/lang.js" defer></script>
+  </body>
+</html>

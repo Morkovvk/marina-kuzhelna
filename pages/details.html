@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="author" content="Marina Kuzhelna | Анімаії" />
+    <meta
+      name="keywords"
+      content="animation, motion graphics, visual effects, character animation, 3D animation, 2D animation, VFX, CGI, digital art, storytelling, motion design"
+    />
+    <meta
+      name="description"
+      content="Explore stunning animations and motion graphics created by a professional animator. High-quality visual effects, character animation, and storytelling through motion."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>About me</title>
+    <link rel="icon" href="../image/anim.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/pages.css" type="text/css" />
+  </head>
+
+  <body>
+    <header class="header hidden">
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <img class="header-image" src="../image/logo.JPG" alt="logo" />
+          <span data-i18n="header_name"> Марина Кужельна</span>
+        </a>
+        <nav class="header__nav">
+          <a
+            class="header_link"
+            onclick="window.location.href = '../index.html'"
+            data-i18n="nav_home"
+            >Головна</a
+          >
+          <a
+            class="header_link"
+            onclick="window.location.href = '../index.html#gallery-title'"
+            data-i18n="nav_animations"
+            >Анімації</a
+          >
+          <a
+            class="header_link"
+            onclick="window.location.href = '../index.html#contact'"
+            data-i18n="nav_contacts"
+            >Контакти</a
+          >
+        </nav>
+
+        <button class="menu-icon" type="button">
+          <div class="menu-icon__line"></div>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="welcome"></section>
+      <div class="container hero-text">
+        <h1 class="h1_header" data-i18n="header_name">Марина Кужельна</h1>
+
+        <p class="details" data-i18n="child">
+          З дитинства я занурювалась у світ творчості: знімала короткометражні
+          фільми, навчалась монтажу, малювала, створювала декорації, займалась
+          рукоділлям. Згодом це захоплення привело мене до анімації. Музика,
+          особливо її глибокі, змістовні фрагменти, викликала у мені сильні
+          емоції — саме вони ставали основою для майбутніх сюжетів.
+        </p>
+
+        <p class="details" data-i18n="university">
+          Вступила до Київського національного університету театру, кіно і
+          телебачення імені Івана Карпенка-Карого, обравши спеціальність
+          «режисура анімаційного кіно». Тут з’явилися мої перші авторські
+          анімаційні короткометражки.
+        </p>
+
+        <p class="details" data-i18n="coop">
+          Наразі я зосереджуюсь переважно на створенні музичних кліпів, однак
+          працюю також над анімаціями для театрів, поезії, мультиплікаційними
+          проєктами та іншими творчими форматами. Відкрита до співпраці та нових
+          ідей.
+        </p>
+
+        <div class="gallery">
+          <img
+            class="side-img left"
+            src="../image/prolog.jpg"
+            alt="certificate"
+          />
+          <img class="center-img" src="../image/sprya.JPG" alt="certificate" />
+          <img
+            class="side-img right"
+            src="../image/sprya_m.JPG"
+            alt="performance of the Maryna"
+          />
+        </div>
+
+        <button
+          class="btn"
+          type="button"
+          onclick="window.history.back()"
+          data-i18n="b_back"
+        >
+          Повернутися на головну
+        </button>
+      </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/works.js"></script>
+    <script src="../js/lang.js" defer></script>
+  </body>
+</html>
