@@ -26,6 +26,9 @@ if (modal) {
 
       modal.style.display = "flex";
 
+      document.documentElement.classList.add("no-scroll");
+
+
       // щоб анімація не "проковтувалась"
       requestAnimationFrame(() => {
         modal.classList.add("show");
@@ -36,6 +39,8 @@ if (modal) {
   // --- Закривання ---
   const closeModal = () => {
     modal.classList.remove("show");
+    document.documentElement.classList.remove("no-scroll");
+
 
     setTimeout(() => {
       modal.style.display = "none";
