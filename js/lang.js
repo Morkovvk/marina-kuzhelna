@@ -1,7 +1,5 @@
 // ===== ШЛЯХ ДЛЯ ПІДСТОРІНОК =====
-const basePath = window.location.pathname.includes("/pages/")
-  ? ".."
-  : ".";
+const basePath = window.location.pathname.includes("/pages/") ? ".." : ".";
 
 // ===== ПОТОЧНА МОВА =====
 let currentLang = localStorage.getItem("lang") || "uk";
@@ -35,9 +33,14 @@ async function loadLang(lang) {
       if (data[key]) el.textContent = data[key];
     });
 
-    if (currentLangSpan) currentLangSpan.textContent = lang.toUpperCase();
-    localStorage.setItem("lang", lang);
+    const activeItem = document.querySelector(
+      `.lang-dropdown li[data-lang="${lang}"]`,
+    );
+    if (currentLangSpan && activeItem)
+      currentLangSpan.textContent = activeItem.textContent;
+    document.documentElement.lang = lang;
 
+    localStorage.setItem("lang", lang);
   } catch (err) {
     console.error("Language loading error:", err);
   }
