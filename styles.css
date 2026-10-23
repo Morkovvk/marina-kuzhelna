@@ -452,7 +452,7 @@ h3 {
     transform: scale(0.9);
     opacity: 0;
     transition: transform 0.4s ease, opacity 0.4s ease;
-    box-shadow: 0 0 30pxrgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 
 .close {
