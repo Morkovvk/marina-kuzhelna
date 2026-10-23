@@ -1,16 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/*
-    загальні стилі
-    
-*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Playpen Sans", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
 html {
@@ -47,7 +38,10 @@ body,
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.5px;
-    font-family: "Manrope", sans-serif;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 img {
@@ -452,7 +446,7 @@ h3 {
     transform: scale(0.9);
     opacity: 0;
     transition: transform 0.4s ease, opacity 0.4s ease;
-    box-shadow: 0 0 30pxrgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 
 .close {
