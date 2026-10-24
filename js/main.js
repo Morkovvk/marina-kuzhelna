@@ -32,11 +32,3 @@ menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('menu-icon--active');
     header1.classList.toggle('header--mobile')
 });
-
-
-document.querySelectorAll('.back-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const target = btn.dataset.target;
-        window.location.href = target;
-    });
-});
