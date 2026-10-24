@@ -8,54 +8,55 @@
   text-align: center;
 }
 
-.h1_header, .details {
+.h1_header,
+.details {
   color: aliceblue;
   padding: 10px;
 }
 
 .gallery {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 60px 0;
- }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 60px 0;
+}
 
 .center-img {
-    width: 300px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    transform: scale(1.15); /* ближча до глядача */
-    z-index: 3;
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: scale(1.15); /* ближча до глядача */
+  z-index: 3;
 }
 
 /* Бокові */
 .side-img {
-    width: 360px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    opacity: 0.9;
-    transform: perspective(800px) rotateY(18deg) scale(0.9);
-    transition: 0.3s ease;
-    z-index: 1;
+  width: 360px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+  transform: perspective(800px) rotateY(18deg) scale(0.9);
+  transition: 0.3s ease;
+  z-index: 1;
 }
 
 /* Ліва трохи в інший бік */
 .left {
-    transform: perspective(800px) rotateY(-18deg) scale(0.9);
+  transform: perspective(800px) rotateY(-18deg) scale(0.9);
 }
 
 /* Ховер-ефект  */
 .side-img:hover {
-    transform: perspective(800px) rotateY(0deg) scale(1);
-    z-index: 4;
+  transform: perspective(800px) rotateY(0deg) scale(1);
+  z-index: 4;
 }
 
 .btn {
- display: block;
-    margin: 40px auto 20px;
+  display: block;
+  width: fit-content;
+  margin: 40px auto 20px;
 }
-
