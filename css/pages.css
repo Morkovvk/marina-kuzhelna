@@ -14,49 +14,114 @@
   padding: 10px;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 60px 0;
+.carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+  --slide-width: 520px;
+  --slide-height: 390px;
+  --slide-offset: 360px;
 }
 
-.center-img {
-  width: 300px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  transform: scale(1.15); /* ближча до глядача */
-  z-index: 3;
+.carousel__track {
+  position: relative;
+  height: calc(var(--slide-height) * 1.35);
 }
 
-/* Бокові */
-.side-img {
-  width: 360px;
-  height: auto;
+.carousel__slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: none;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+  cursor: pointer;
+  width: var(--slide-width);
+  height: var(--slide-height);
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel__slide.is-center {
+  transform: translate(-50%, -50%) translateX(0) perspective(800px)
+    rotateY(0deg) scale(1.15);
+  z-index: 3;
+  cursor: default;
+}
+
+.carousel__slide.is-left {
+  transform: translate(-50%, -50%) translateX(calc(var(--slide-offset) * -1))
+    perspective(450px) rotateY(-12deg) scale(0.9);
   opacity: 0.9;
-  transform: perspective(800px) rotateY(18deg) scale(0.9);
-  transition: 0.3s ease;
   z-index: 1;
 }
 
-/* Ліва трохи в інший бік */
-.left {
-  transform: perspective(800px) rotateY(-18deg) scale(0.9);
+.carousel__slide.is-right {
+  transform: translate(-50%, -50%) translateX(calc(var(--slide-offset) * 1))
+    perspective(450px) rotateY(12deg) scale(0.9);
+  opacity: 0.9;
+  z-index: 1;
 }
 
-/* Ховер-ефект  */
-.side-img:hover {
-  transform: perspective(800px) rotateY(0deg) scale(1);
+.carousel__slide.is-hidden {
+  transform: translate(-50%, -50%) translateX(0) perspective(800px)
+    rotateY(0deg) scale(0.7);
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 4;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.carousel__arrow--prev {
+  left: 16px;
+}
+
+.carousel__arrow--next {
+  right: 16px;
 }
 
 .btn {
   display: block;
   width: fit-content;
   margin: 40px auto 20px;
+}
+
+@media (max-width: 580px) {
+  .carousel {
+    --slide-width: 260px;
+    --slide-height: 195px;
+    --slide-offset: 170px;
+  }
+
+  .carousel__arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+
+  .carousel__arrow--prev {
+    left: 4px;
+  }
+
+  .carousel__arrow--next {
+    right: 4px;
+  }
 }
