@@ -14,45 +14,50 @@
   padding: 10px;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 60px 0;
+.carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
 }
 
-.center-img {
-  width: 300px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  transform: scale(1.15); /* ближча до глядача */
-  z-index: 3;
+.carousel__track {
+  position: relative;
+  height: 420px;
 }
 
-/* Бокові */
-.side-img {
-  width: 360px;
-  height: auto;
+.carousel__slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: auto;
+  max-width: none;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.carousel__slide.is-center {
+  transform: translate(-50%, -50%) translateX(0) perspective(800px)
+    rotateY(0deg) scale(1.15);
+  z-index: 3;
+  cursor: default;
+}
+
+.carousel__slide.is-left {
+  transform: translate(-50%, -50%) translateX(-320px) scale(0.9);
   opacity: 0.9;
-  transform: perspective(800px) rotateY(18deg) scale(0.9);
-  transition: 0.3s ease;
   z-index: 1;
 }
 
-/* Ліва трохи в інший бік */
-.left {
-  transform: perspective(800px) rotateY(-18deg) scale(0.9);
-}
-
-/* Ховер-ефект  */
-.side-img:hover {
-  transform: perspective(800px) rotateY(0deg) scale(1);
-  z-index: 4;
+.carousel__slide.is-right {
+  transform: translate(-50%, -50%) translateX(320px) perspective(800px)
+    rotateY(18deg) scale(0.9);
+  opacity: 0.9;
+  z-index: 1;
 }
 
 .btn {
