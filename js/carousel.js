@@ -1,6 +1,30 @@
 const carousel = document.querySelector(".carousel");
 
 if (carousel) {
+  let touchStartX = 0;
+  let touchStartY = 0;
+
+  carousel.addEventListener(
+    "touchstart",
+    (event) => {
+      touchStartX = event.touches[0].clientX;
+      touchStartY = event.touches[0].clientY;
+    },
+    { passive: true },
+  );
+
+  carousel.addEventListener("touchend", (event) => {
+    const distanceX = event.changedTouches[0].clientX - touchStartX;
+    const distanceY = event.changedTouches[0].clientY - touchStartY;
+
+    // занадто короткий рух або людина гортає сторінку вниз/вгору
+    if (Math.abs(distanceX) < 50 || Math.abs(distanceY) > Math.abs(distanceX))
+      return;
+
+    if (distanceX < 0) goTo(current + 1);
+    else goTo(current - 1);
+  });
+
   const slides = carousel.querySelectorAll(".carousel__slide");
   const prevBtn = carousel.querySelector(".carousel__arrow--prev");
   const nextBtn = carousel.querySelector(".carousel__arrow--next");
