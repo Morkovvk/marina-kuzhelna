@@ -30,4 +30,6 @@ if (carousel) {
   slides.forEach((slide, index) => {
     slide.addEventListener("click", () => goTo(index));
   });
+
+  render();
 }

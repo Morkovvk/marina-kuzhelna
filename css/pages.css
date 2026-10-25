@@ -53,14 +53,14 @@
 }
 
 .carousel__slide.is-left {
-  transform: translate(-50%, -50%) translateX(calc(var(--slide-offset) * -0.9))
+  transform: translate(-50%, -50%) translateX(calc(var(--slide-offset) * -1))
     perspective(450px) rotateY(-12deg) scale(0.9);
   opacity: 0.9;
   z-index: 1;
 }
 
 .carousel__slide.is-right {
-  transform: translate(-50%, -50%) translateX(calc(var(--slide-offset) * 0.9))
+  transform: translate(-50%, -50%) translateX(calc(var(--slide-offset) * 1))
     perspective(450px) rotateY(12deg) scale(0.9);
   opacity: 0.9;
   z-index: 1;
