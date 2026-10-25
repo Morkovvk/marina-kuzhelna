@@ -103,3 +103,25 @@
   width: fit-content;
   margin: 40px auto 20px;
 }
+
+@media (max-width: 580px) {
+  .carousel {
+    --slide-width: 260px;
+    --slide-height: 195px;
+    --slide-offset: 170px;
+  }
+
+  .carousel__arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+
+  .carousel__arrow--prev {
+    left: 4px;
+  }
+
+  .carousel__arrow--next {
+    right: 4px;
+  }
+}
