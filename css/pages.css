@@ -18,18 +18,20 @@
   position: relative;
   overflow: hidden;
   padding: 40px 0;
+  --slide-height: 432px;
+  --slide-offset: 228px;
 }
 
 .carousel__track {
   position: relative;
-  height: 420px;
+  height: calc(var(--slide-height) * 1.35);
 }
 
 .carousel__slide {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 300px;
+  height: var(--slide-height);
   width: auto;
   max-width: none;
   border-radius: 12px;
@@ -48,14 +50,15 @@
 }
 
 .carousel__slide.is-left {
-  transform: translate(-50%, -50%) translateX(-320px) scale(0.9);
+  transform: translate(-50%, -50%) translateX(calc(var(--slide-offset) * -0.9))
+    perspective(450px) rotateY(-12deg) scale(0.9);
   opacity: 0.9;
   z-index: 1;
 }
 
 .carousel__slide.is-right {
-  transform: translate(-50%, -50%) translateX(320px) perspective(800px)
-    rotateY(18deg) scale(0.9);
+  transform: translate(-50%, -50%) translateX(calc(var(--slide-offset) * 0.9))
+    perspective(450px) rotateY(12deg) scale(0.9);
   opacity: 0.9;
   z-index: 1;
 }
