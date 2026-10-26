@@ -6,7 +6,7 @@ if (footer) {
   footer.innerHTML = `
     <div class="container">
       <p class="footer_copy">
-    <span data-i18n="name_avtor">Марина Кужельна</span> · &copy 2026
+    <span data-i18n="name_avtor">Марина Кужельна</span> · &copy; 2026
     <span> | </span> Made by ·
     <a href="https://www.linkedin.com/in/liudmyla-palchynska-518674253/"
       target="_blank"
