@@ -17,7 +17,7 @@
 .carousel {
   position: relative;
   overflow: hidden;
-  padding: 40px 0;
+  padding: var(--space-l) 0;
   --slide-width: 520px;
   --slide-height: 390px;
   --slide-offset: 360px;
@@ -101,7 +101,7 @@
 .btn {
   display: block;
   width: fit-content;
-  margin: 40px auto 20px;
+  margin: var(--space-l) auto var(--space-s);
 }
 
 @media (max-width: 580px) {

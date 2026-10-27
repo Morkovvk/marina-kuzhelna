@@ -56,66 +56,73 @@
       </div>
     </header>
 
-    <main class="main1">
-      <section id="screen2" class="hero-text">
-        <h1 class="listing__title">Schmalgauzen</h1>
+    <main class="main">
+      <section id="screen2">
+        <div class="container">
+          <h1 class="listing__title">Schmalgauzen</h1>
 
-        <div class="screenshots-wrapper">
-          <figure>
-            <img src="../image/schmalgauzen/kosmos_1.jpg" alt="kosmos" />
-            <img src="../image/schmalgauzen/kosmos_2.jpg" alt="kosmos" />
-            <img src="../image/schmalgauzen/kosmos_3.jpg" alt="kosmos" />
-            <figcaption class="item-label">
-              <h3 data-i18n="s_kosmos">Космос пахне весь зорями</h3>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="container item-label">
-          <button
-            data-video="../media/kosmos.mp4"
-            class="btn open-video"
-            data-i18n="look"
-          >
-            Переглянути анімацію
-          </button>
-        </div>
-        <div id="videoModal" class="modal">
-          <div class="modal-content">
-            <button class="close" type="button" aria-label="Закрити">×</button>
-            <video controls controlsList="nodownload" disablePictureInPicture>
-              <source id="videoSourse" src="" type="video/mp4" />
-            </video>
+          <div class="screenshots-wrapper">
+            <figure>
+              <img src="../image/schmalgauzen/kosmos_1.jpg" alt="kosmos" />
+              <img src="../image/schmalgauzen/kosmos_2.jpg" alt="kosmos" />
+              <img src="../image/schmalgauzen/kosmos_3.jpg" alt="kosmos" />
+              <figcaption class="item-label">
+                <h3 data-i18n="s_kosmos">Космос пахне весь зорями</h3>
+              </figcaption>
+            </figure>
           </div>
-        </div>
+          <div class="item-label">
+            <button
+              data-video="../media/kosmos.mp4"
+              class="btn open-video"
+              data-i18n="look"
+            >
+              Переглянути анімацію
+            </button>
+          </div>
+          <div id="videoModal" class="modal">
+            <div class="modal-content">
+              <button class="close" type="button" aria-label="Закрити">
+                ×
+              </button>
+              <video controls controlsList="nodownload" disablePictureInPicture>
+                <source id="videoSourse" src="" type="video/mp4" />
+              </video>
+            </div>
+          </div>
 
-        <div class="screenshots-wrapper">
-          <figure>
-            <img src="../image/schmalgauzen/blood_1.jpg" alt="blood&wine" />
-            <img src="../image/schmalgauzen/faite_2.jpg" alt="blood&wine" />
-            <img src="../image/schmalgauzen/faite_3.jpg" alt="blood&wine" />
-            <figcaption class="item-label">
-              <h3 data-i18n="s_krov">Кров і вино</h3>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="container item-label">
-          <a
-            class="btn"
-            href="https://www.instagram.com/reel/Csx-0GVAiUl/?igsh=aHYyMnNybm56a3Nn"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-i18n="look"
-            >Переглянути анімацію</a
-          >
-        </div>
-        <div class="container item-label back-link">
-          <a class="btn" href="../index.html#gallery-title" data-i18n="b_works"
-            >До галереї</a
-          >
+          <div class="screenshots-wrapper">
+            <figure>
+              <img src="../image/schmalgauzen/blood_1.jpg" alt="blood&wine" />
+              <img src="../image/schmalgauzen/faite_2.jpg" alt="blood&wine" />
+              <img src="../image/schmalgauzen/faite_3.jpg" alt="blood&wine" />
+              <figcaption class="item-label">
+                <h3 data-i18n="s_krov">Кров і вино</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="item-label">
+            <a
+              class="btn"
+              href="https://www.instagram.com/reel/Csx-0GVAiUl/?igsh=aHYyMnNybm56a3Nn"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="look"
+              >Переглянути анімацію</a
+            >
+          </div>
+          <div class="item-label back-link">
+            <a
+              class="btn"
+              href="../index.html#gallery-title"
+              data-i18n="b_works"
+              >До галереї</a
+            >
+          </div>
         </div>
       </section>
     </main>
-    <footer class="footer hero-text" id="site-footer"></footer>
+    <footer class="footer" id="site-footer"></footer>
     <script src="../js/main.js"></script>
     <script src="../js/works.js"></script>
     <script src="../js/footer.js"></script>
