@@ -217,6 +217,12 @@ a:hover {
 /*
     MAIN
 */
+.welcome {
+  min-height: calc(100vh - var(--header-height) - var(--space-xl));
+  display: grid;
+  align-content: center;
+}
+
 .welcome .container {
   display: flex;
   align-items: center;
