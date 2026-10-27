@@ -5,6 +5,7 @@
   --space-l: 40px;
   --space-xl: 64px;
   --space-xxl: 120px;
+  --header-height: 72px;
 }
 
 * {
@@ -27,18 +28,7 @@ html.no-scroll {
   overflow: hidden;
 }
 
-.hero-text {
-  background: rgba(0, 0, 0, 0.5);
-  /* напівпрозорий фон */
-  backdrop-filter: blur(4px);
-  /* м’який блюр */
-  padding: var(--space-l);
-  border-radius: 12px;
-  /* max-width: 600px; */
-}
-
-body,
-.main1 {
+body {
   margin: 0;
   background: url("image/IMG_6172.JPG") no-repeat center fixed;
   background-size: cover;
@@ -51,6 +41,15 @@ body,
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.main {
+  max-width: 1250px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: calc(var(--header-height) + var(--space-xl)) 0 var(--space-xxl);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
 }
 
 button {
@@ -218,10 +217,6 @@ a:hover {
 /*
     MAIN
 */
-.welcome {
-  margin-top: var(--space-xxl);
-}
-
 .welcome .container {
   display: flex;
   align-items: center;
@@ -234,7 +229,7 @@ a:hover {
   font-size: 51px;
   line-height: 1.19;
   color: #dedede;
-  margin-block:0 var(--space-m);
+  margin-block: 0 var(--space-m);
 }
 
 .welcome__text {
@@ -253,8 +248,7 @@ a:hover {
 
 /* WORKS */
 
-#screen1,
-#screen2 {
+#screen1 {
   margin-top: var(--space-xxl);
   margin-bottom: 40px;
 }
@@ -409,7 +403,11 @@ h3 {
 }
 
 .footer {
-  border: 1px solid #696969;
+  max-width: 1250px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  border-top: 1px solid #696969;
   padding: 24px 0;
 }
 

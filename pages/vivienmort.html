@@ -56,45 +56,52 @@
       </div>
     </header>
 
-    <main class="main1">
-      <section id="screen2" class="hero-text">
-        <h1 class="listing__title">Vivien Mort</h1>
+    <main class="main">
+      <section id="screen2">
+        <div class="container">
+          <h1 class="listing__title">Vivien Mort</h1>
 
-        <div class="screenshots-wrapper">
-          <figure>
-            <img src="../image/vivien_mort/gotuka_1.jpg" alt="gotuka" />
-            <img src="../image/vivien_mort/gotuka_2.jpg" alt="gotuka" />
-            <img src="../image/vivien_mort/gotuka_3.jpg" alt="gotuka" />
-            <figcaption class="item-label">
-              <h3 data-i18n="v_gotyka">Готика</h3>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="container item-label">
-          <button
-            class="btn open-video"
-            data-video="../media/gotyka.mp4"
-            data-i18n="look"
-          >
-            Переглянути анімацію
-          </button>
-        </div>
-        <div id="videoModal" class="modal">
-          <div class="modal-content">
-            <button class="close" type="button" aria-label="Закрити">×</button>
-            <video controls controlsList="nodownload" disablePictureInPicture>
-              <source id="videoSourse" src="" type="video/mp4" />
-            </video>
+          <div class="screenshots-wrapper">
+            <figure>
+              <img src="../image/vivien_mort/gotuka_1.jpg" alt="gotuka" />
+              <img src="../image/vivien_mort/gotuka_2.jpg" alt="gotuka" />
+              <img src="../image/vivien_mort/gotuka_3.jpg" alt="gotuka" />
+              <figcaption class="item-label">
+                <h3 data-i18n="v_gotyka">Готика</h3>
+              </figcaption>
+            </figure>
           </div>
-        </div>
-        <div class="container item-label back-link">
-          <a class="btn" href="../index.html#gallery-title" data-i18n="b_works"
-            >До галереї</a
-          >
+          <div class="item-label">
+            <button
+              class="btn open-video"
+              data-video="../media/gotyka.mp4"
+              data-i18n="look"
+            >
+              Переглянути анімацію
+            </button>
+          </div>
+          <div id="videoModal" class="modal">
+            <div class="modal-content">
+              <button class="close" type="button" aria-label="Закрити">
+                ×
+              </button>
+              <video controls controlsList="nodownload" disablePictureInPicture>
+                <source id="videoSourse" src="" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="item-label back-link">
+            <a
+              class="btn"
+              href="../index.html#gallery-title"
+              data-i18n="b_works"
+              >До галереї</a
+            >
+          </div>
         </div>
       </section>
     </main>
-    <footer class="footer hero-text" id="site-footer"></footer>
+    <footer class="footer" id="site-footer"></footer>
     <script src="../js/main.js"></script>
     <script src="../js/works.js"></script>
     <script src="../js/footer.js"></script>
