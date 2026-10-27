@@ -285,6 +285,11 @@ h3 {
   color: #dedede;
 }
 
+.listing__img-wrapper h3 {
+  font-size: 1em;
+  color: inherit;
+}
+
 .listing__wrapper {
   display: flex;
   flex-wrap: wrap;
