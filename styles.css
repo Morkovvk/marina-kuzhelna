@@ -15,6 +15,7 @@
 }
 
 html {
+  touch-action: manipulation;
   scroll-behavior: smooth;
   overflow: auto;
   /* або scroll */
