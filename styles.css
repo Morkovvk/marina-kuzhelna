@@ -297,16 +297,19 @@ h3 {
 
 .listing__img-wrapper {
   width: 200px;
-  height: 200px;
-  object-fit: cover;
-  object-position: center;
-  padding-bottom: 0;
-}
-
-.listing__img-wrapper:hover {
+  margin: 0;
   transition:
     transform 1.05s ease,
     opacity 0.3s ease;
+}
+
+.listing__img-wrapper img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.listing__img-wrapper:hover {
   opacity: 1;
   transform: scale(1.05);
   border-color: #333;
@@ -334,10 +337,19 @@ h3 {
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  /* Щоб рамка і відступи не виходили за межі */
-  object-fit: cover;
-  object-position: center;
-  padding-bottom: 0;
+}
+
+.screenshots-wrapper figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--space-s);
+  margin: 0;
+}
+
+.screenshots-wrapper figcaption {
+  width: 100%;
 }
 
 /*  contact  */
