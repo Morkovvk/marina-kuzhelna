@@ -17,12 +17,6 @@
 html {
   touch-action: manipulation;
   scroll-behavior: smooth;
-  overflow: auto;
-  /* або scroll */
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* IE/Edge */
 }
 
 html.no-scroll {
@@ -380,38 +374,26 @@ h3 {
   margin-top: 8px;
 }
 
-.email_btn::after {
-  content: "";
-  width: 40px;
-  height: 30px;
-  background-image: url("image/icons8-email-open-64.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.tel_btn::after {
-  content: "";
-  width: 40px;
-  height: 28px;
-  background-image: url("image/icons8-telegram-logo.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
+.email_btn::after,
 .inst_btn::after {
   content: "";
   width: 40px;
   height: 28px;
-  background-image: url("image/icons8-instagram-logo.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* FOOTER */
+.email_btn::after {
+  height: 30px;
+  background-image: url("image/icons8-email-open-64.png");
+}
 
+.inst_btn::after {
+  background-image: url("image/icons8-instagram-logo.svg");
+}
+
+/* FOOTER */
 .footer .container {
   display: flex;
   align-items: baseline;
