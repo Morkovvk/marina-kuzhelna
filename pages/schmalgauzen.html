@@ -86,16 +86,6 @@
               Переглянути анімацію
             </button>
           </div>
-          <div id="videoModal" class="modal">
-            <div class="modal-content">
-              <button class="close" type="button" aria-label="Закрити">
-                ×
-              </button>
-              <video controls controlsList="nodownload" disablePictureInPicture>
-                <source id="videoSourse" src="" type="video/mp4" />
-              </video>
-            </div>
-          </div>
 
           <div class="screenshots-wrapper">
             <figure>
@@ -138,6 +128,15 @@
       </section>
     </main>
     <footer class="footer" id="site-footer"></footer>
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <button class="close" type="button" aria-label="Закрити">×</button>
+        <video controls controlsList="nodownload" disablePictureInPicture>
+          <source id="videoSourse" src="" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
     <script src="../js/main.js"></script>
     <script src="../js/works.js"></script>
     <script src="../js/footer.js"></script>
