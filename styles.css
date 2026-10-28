@@ -34,7 +34,6 @@ body {
   background: url("image/IMG_6172.JPG") no-repeat center fixed;
   background-size: cover;
   color: #959595;
-  font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.5px;
@@ -93,7 +92,6 @@ a:hover {
   width: 100%;
   z-index: 1000;
   transition: transform 0.4s ease-in-out;
-  position: fixed;
 }
 
 .header.hidden {
@@ -439,16 +437,25 @@ h3 {
 
 /* Початковий стан модалки */
 .modal {
+  --start-x: 50vw;
+  --start-y: 50vh;
   display: none;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform-origin: var(--start-x) var(--start-y);
+  transform: scale(0.3);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 /* Коли модалка активна */
@@ -501,23 +508,6 @@ video {
   height: 500px;
   display: block;
   user-select: none;
-}
-
-.modal {
-  --start-x: 50vw;
-  --start-y: 50vh;
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transform-origin: var(--start-x) var(--start-y);
-  transform: scale(0.3);
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
 }
 
 /* Приховує кнопку завантаження */
