@@ -26,6 +26,7 @@ if (langBtn) {
 async function loadLang(lang) {
   try {
     const res = await fetch(`${basePath}/lang/${lang}.json`);
+    if (!res.ok) throw new Error(`Cannot load ${lang}.json: ${res.status}`);
     const data = await res.json();
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
