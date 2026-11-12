@@ -34,6 +34,11 @@ async function loadLang(lang) {
       if (data[key]) el.textContent = data[key];
     });
 
+    document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+      const key = el.dataset.i18nAlt;
+      if (data[key]) el.alt = data[key];
+    });
+
     const activeItem = document.querySelector(
       `.lang-dropdown button[data-lang="${lang}"]`,
     );
