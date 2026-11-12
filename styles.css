@@ -192,14 +192,18 @@ a:hover {
   z-index: 100;
 }
 
-.lang-dropdown li {
+.lang-dropdown button {
+  width: 100%;
   padding: 8px 12px;
-  cursor: pointer;
+  background: none;
+  border: none;
   color: #fff;
+  cursor: pointer;
   transition: 0.2s;
 }
 
-.lang-dropdown li:hover {
+.lang-dropdown button:hover,
+.lang-dropdown button:focus-visible {
   background: rgba(255, 255, 255, 0.1);
 }
 
