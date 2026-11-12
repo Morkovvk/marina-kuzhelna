@@ -35,7 +35,7 @@ async function loadLang(lang) {
     });
 
     const activeItem = document.querySelector(
-      `.lang-dropdown li[data-lang="${lang}"]`,
+      `.lang-dropdown button[data-lang="${lang}"]`,
     );
     if (currentLangSpan && activeItem)
       currentLangSpan.textContent = activeItem.textContent;
@@ -48,7 +48,7 @@ async function loadLang(lang) {
 }
 
 // ===== ВИБІР МОВИ У СПИСКУ =====
-document.querySelectorAll(".lang-dropdown li").forEach((item) => {
+document.querySelectorAll(".lang-dropdown button").forEach((item) => {
   item.addEventListener("click", () => {
     const lang = item.dataset.lang;
     loadLang(lang);
