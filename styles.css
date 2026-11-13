@@ -112,6 +112,11 @@ a:hover {
   list-style: none;
 }
 
+.logo--compact + .header__nav {
+  gap: var(--space-m);
+  font-size: 18px;
+}
+
 .header__link {
   font-weight: 700;
   font-size: 18px;
@@ -494,15 +499,18 @@ video::-webkit-media-controls-enclosure {
   overflow: hidden;
 }
 /* ===== ДО 1200px: менше за desktop ===== */
+
 @media (max-width: 1199px) {
   .welcome__img {
     margin-right: 0;
   }
 
-  /* НОВЕ: меню з 8 посилань на підсторінках має вміститися */
   .header__nav {
     gap: var(--space-m);
     font-size: 18px;
+  }
+  .logo--compact .logo__name {
+    display: none;
   }
 }
 
@@ -537,6 +545,10 @@ video::-webkit-media-controls-enclosure {
 
   .header .container > .logo {
     margin-right: auto;
+  }
+
+  .logo--compact .logo__name {
+    display: inline;
   }
 
   .menu-icon {
