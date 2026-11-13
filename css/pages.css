@@ -104,7 +104,7 @@
   margin: var(--space-l) auto var(--space-s);
 }
 
-@media (max-width: 580px) {
+@media (max-width: 575px) {
   .carousel {
     --slide-width: 260px;
     --slide-height: 195px;
