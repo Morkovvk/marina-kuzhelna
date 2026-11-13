@@ -96,7 +96,7 @@ a:hover {
 }
 
 .header__logo {
-  width: 6%;
+  width: 32px;
 }
 
 .header .container {
@@ -505,10 +505,6 @@ video::-webkit-media-controls-enclosure {
     gap: 65px;
   }
 
-  .welcome {
-    margin-top: 150px;
-  }
-
   .welcome__title {
     width: auto;
   }
@@ -523,13 +519,6 @@ video::-webkit-media-controls-enclosure {
   }
 }
 
-@media (max-width: 850px) {
-  .listing,
-  .contact {
-    margin-top: 100px;
-  }
-}
-
 @media (max-width: 770px) {
   .welcome__title {
     font-size: 36px;
@@ -539,7 +528,6 @@ video::-webkit-media-controls-enclosure {
 @media (max-width: 680px) {
   .listing__img-wrapper {
     width: 190px;
-    height: 190px;
   }
 
   .footer .container {
@@ -551,6 +539,10 @@ video::-webkit-media-controls-enclosure {
 }
 
 @media (max-width: 580px) {
+  :root {
+    --space-xxl: 80px;
+  }
+
   .header__nav {
     display: none;
   }
@@ -563,11 +555,6 @@ video::-webkit-media-controls-enclosure {
   .title,
   .listing__title {
     font-size: 28px;
-  }
-
-  .listing,
-  .contact {
-    margin-top: 80px;
   }
 
   .contact__title {
@@ -584,30 +571,24 @@ video::-webkit-media-controls-enclosure {
     width: 180px;
   }
 
-  .contact {
-    margin-bottom: 100px;
-  }
-
-  .header {
-    /*position: relative;*/
-    display: block;
-    right: 15px;
-    position: sticky;
-    background: rgba(50, 50, 50, 0.7);
-    scroll-behavior: smooth;
-  }
-
   /* бургер меню*/
   .menu-icon {
     width: 36px;
     height: 24px;
-    position: absolute;
-    right: 15px;
-    top: 20px;
+    position: relative;
+    margin-left: 16px;
     border: none;
     display: block;
     background-color: transparent;
     padding: 0;
+  }
+
+  .header .container {
+    justify-content: flex-end;
+  }
+
+  .header .container > .logo {
+    margin-right: auto;
   }
 
   .menu-icon::after,
@@ -660,34 +641,30 @@ video::-webkit-media-controls-enclosure {
       transform 0.3s 0.3s;
   }
 
-  .header--mobile .header__nav {
-    display: flex;
-    align-self: center;
+  .header--mobile .container {
     flex-wrap: wrap;
-    gap: 20px 30px;
-    justify-content: center;
-    /*flex-direction: column;*/
-    margin: 10px auto;
   }
 
-  .header.header--mobile .container {
+  .header--mobile .header__nav {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    align-items: center;
+    gap: var(--space-s);
+    order: 1;
+    width: 100%;
+    margin-top: var(--space-s);
   }
 }
 
 @media (max-width: 460px) {
   .listing__img-wrapper {
     width: 180px;
-    height: 180px;
   }
 }
 
 @media (max-width: 420px) {
   .listing__img-wrapper {
     width: 150px;
-    height: 150px;
   }
 
   .item-label {
@@ -702,7 +679,6 @@ video::-webkit-media-controls-enclosure {
 @media (max-width: 360px) {
   .listing__img-wrapper {
     width: 127px;
-    height: 127px;
   }
 
   .item-label {
