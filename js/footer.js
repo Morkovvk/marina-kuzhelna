@@ -5,7 +5,7 @@ if (footer) {
 
   footer.innerHTML = `
     <div class="container">
-      <p class="footer_copy">
+      <p class="footer__copy">
     <span data-i18n="name_avtor">Марина Кужельна</span> · &copy; 2026
     <span> | </span> Made by ·
     <a href="https://www.linkedin.com/in/liudmyla-palchynska-518674253/"
@@ -16,11 +16,11 @@ if (footer) {
     </a>
   </p>
       <div class="socials">
-        <a href="mailto:mkuzhelna@gmail.com" class="socials_link">
-          <img src="${base}/image/icons8-email-50.png" alt="Email" class="socials_img" />
+        <a href="mailto:mkuzhelna@gmail.com" class="socials__link">
+          <img src="${base}/image/icons8-email-50.png" alt="Email" class="socials__img" />
         </a>
-        <a href="https://www.instagram.com/marinka19.07" class="socials_link" target="_blank" rel="noopener noreferrer">
-          <img src="${base}/image/icons8-instagram-logo.svg" alt="Instagram" class="socials_img" />
+        <a href="https://www.instagram.com/marinka19.07" class="socials__link" target="_blank" rel="noopener noreferrer">
+          <img src="${base}/image/icons8-instagram-logo.svg" alt="Instagram" class="socials__img" />
         </a>
       </div>
     </div>
