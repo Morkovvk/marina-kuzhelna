@@ -4,11 +4,11 @@
   border-bottom: 20px dotted #ccc;
 }
 
-.h1_header {
+.details__title {
   text-align: center;
 }
 
-.h1_header,
+.details__title,
 .details {
   color: aliceblue;
   padding: 10px;

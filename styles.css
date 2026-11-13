@@ -95,7 +95,7 @@ a:hover {
   gap: 10px;
 }
 
-.header-image {
+.header__logo {
   width: 6%;
 }
 
@@ -112,7 +112,7 @@ a:hover {
   list-style: none;
 }
 
-.header_link {
+.header__link {
   font-weight: 700;
   font-size: 18px;
 }
@@ -252,7 +252,7 @@ a:hover {
 }
 
 .listing__title,
-.contact_title {
+.contact__title {
   margin-top: 0;
   margin-bottom: var(--space-l);
   font-size: 36px;
@@ -345,25 +345,20 @@ h3 {
   text-align: center;
 }
 
-.contact_title {
+.contact__title {
   margin-bottom: var(--space-m);
 }
 
-.contact_text {
-  font-size: 26px;
-  margin-bottom: var(--space-l);
-}
-
-.email_btn,
-.tel_btn,
-.inst_btn {
+.btn--email,
+.btn--telegram,
+.btn--instagram {
   width: 300px;
   justify-content: center;
   margin-top: 8px;
 }
 
-.email_btn::after,
-.inst_btn::after {
+.btn--email::after,
+.btn--instagram::after {
   content: "";
   width: 40px;
   height: 28px;
@@ -372,12 +367,12 @@ h3 {
   background-repeat: no-repeat;
 }
 
-.email_btn::after {
+.btn--email::after {
   height: 30px;
   background-image: url("image/icons8-email-open-64.png");
 }
 
-.inst_btn::after {
+.btn--instagram::after {
   background-image: url("image/icons8-instagram-logo.svg");
 }
 
@@ -388,7 +383,7 @@ h3 {
   justify-content: space-between;
 }
 
-.socials_img {
+.socials__img {
   width: 24px;
   height: 24px;
   display: flex;
@@ -403,12 +398,12 @@ h3 {
   padding: 24px 0;
 }
 
-.footer_copy {
+.footer__copy {
   font-size: 16px;
   margin: 0;
 }
 
-.footer_copy span {
+.footer__copy span {
   color: #dedede;
 }
 
@@ -575,7 +570,7 @@ video::-webkit-media-controls-enclosure {
     margin-top: 80px;
   }
 
-  .contact_title {
+  .contact__title {
     margin-bottom: 12px;
   }
 
@@ -583,13 +578,9 @@ video::-webkit-media-controls-enclosure {
     max-width: 275px;
   }
 
-  .contact_text {
-    font-size: 18px;
-  }
-
-  .email_btn,
-  .tel_btn,
-  .inst_btn {
+  .btn--email,
+  .btn--telegram,
+  .btn--instagram {
     width: 180px;
   }
 
