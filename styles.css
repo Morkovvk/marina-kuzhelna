@@ -362,6 +362,7 @@ h3 {
   content: "";
   width: 40px;
   height: 28px;
+  flex-shrink: 0;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -612,6 +613,27 @@ video::-webkit-media-controls-enclosure {
     width: 100%;
     margin-top: var(--space-s);
   }
+
+    /* мова — всередині відкритого меню */
+  .lang-switcher {
+    display: none;
+  }
+
+  .header--mobile .lang-switcher {
+    display: flex;
+    justify-content: center;
+    order: 2;
+    width: 100%;
+    margin: var(--space-m) 0 var(--space-s);
+  }
+
+  .header--mobile .lang-dropdown {
+    top: 100%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
 }
 
 /* ===== ДО 768px: великий телефон ===== */
@@ -633,6 +655,13 @@ video::-webkit-media-controls-enclosure {
   :root {
     --space-xxl: 80px;
   }
+  .logo {
+    font-size: 16px;
+  }
+
+  .menu-icon {
+    flex-shrink: 0;
+  }
 
   .welcome__img {
     width: 240px;
@@ -653,8 +682,12 @@ video::-webkit-media-controls-enclosure {
     gap: var(--space-m);
   }
 
-  .listing__img-wrapper {
+  .item-link {
     width: calc((100% - var(--space-m)) / 2);
+  }
+
+  .listing__img-wrapper {
+    width: 100%;
   }
 
   .item-label {
