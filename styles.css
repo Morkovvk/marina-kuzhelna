@@ -404,7 +404,7 @@ h3 {
   margin: 0;
 }
 
-.footer__copy span {
+.footer__copy [data-i18n] {
   color: #dedede;
 }
 
@@ -614,7 +614,7 @@ video::-webkit-media-controls-enclosure {
     margin-top: var(--space-s);
   }
 
-    /* мова — всередині відкритого меню */
+  /* мова — всередині відкритого меню */
   .lang-switcher {
     display: none;
   }
@@ -633,7 +633,6 @@ video::-webkit-media-controls-enclosure {
     right: auto;
     transform: translateX(-50%);
   }
-
 }
 
 /* ===== ДО 768px: великий телефон ===== */
@@ -645,8 +644,20 @@ video::-webkit-media-controls-enclosure {
   .footer .container {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 28px;
-    padding: 8px 0;
+    gap: var(--space-m);
+    padding-block: var(--space-xs);
+  }
+
+  .footer__copy {
+    text-align: center;
+  }
+
+  .footer__part {
+    display: block;
+  }
+
+  .footer__divider {
+    display: none;
   }
 }
 

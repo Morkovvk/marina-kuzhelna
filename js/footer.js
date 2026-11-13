@@ -5,16 +5,23 @@ if (footer) {
 
   footer.innerHTML = `
     <div class="container">
-      <p class="footer__copy">
-    <span data-i18n="name_avtor">Марина Кужельна</span> · &copy; 2026
-    <span> | </span> Made by ·
-    <a href="https://www.linkedin.com/in/liudmyla-palchynska-518674253/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <span data-i18n="name_dev">Людмила Пальчинська</span>
-    </a>
-  </p>
+           <p class="footer__copy">
+        <span class="footer__part">
+          <span data-i18n="name_avtor">Марина Кужельна</span> · &copy; 2026
+        </span>
+        <span class="footer__divider">|</span>
+        <span class="footer__part">
+          Made by ·
+          <a
+            href="https://www.linkedin.com/in/liudmyla-palchynska-518674253/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span data-i18n="name_dev">Людмила Пальчинська</span>
+          </a>
+        </span>
+      </p>
+
       <div class="socials">
         <a href="mailto:mkuzhelna@gmail.com" class="socials__link">
           <img src="${base}/image/icons8-email-50.png" alt="Email" class="socials__img" />
