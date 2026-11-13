@@ -492,14 +492,21 @@ video::-internal-media-controls-download-button {
 video::-webkit-media-controls-enclosure {
   overflow: hidden;
 }
-
-@media (max-width: 1100px) {
+/* ===== ДО 1200px: менше за desktop ===== */
+@media (max-width: 1199px) {
   .welcome__img {
     margin-right: 0;
   }
+
+  /* НОВЕ: меню з 8 посилань на підсторінках має вміститися */
+  .header__nav {
+    gap: var(--space-m);
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 950px) {
+/* ===== ДО 992px: планшет ===== */
+@media (max-width: 991px) {
   .welcome .container {
     flex-direction: column-reverse;
     gap: 65px;
@@ -517,61 +524,20 @@ video::-webkit-media-controls-enclosure {
   .welcome__desc {
     text-align: center;
   }
-}
 
-@media (max-width: 770px) {
-  .welcome__title {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 680px) {
-  .listing__img-wrapper {
-    width: 190px;
-  }
-
-  .footer .container {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 28px;
-    padding: 8px 0;
-  }
-}
-
-@media (max-width: 580px) {
-  :root {
-    --space-xxl: 80px;
-  }
-
+  /* бургер меню — тепер з планшета */
   .header__nav {
     display: none;
   }
 
-  .welcome__img {
-    width: 240px;
-    height: 240px;
+  .header .container {
+    justify-content: flex-end;
   }
 
-  .title,
-  .listing__title {
-    font-size: 28px;
+  .header .container > .logo {
+    margin-right: auto;
   }
 
-  .contact__title {
-    margin-bottom: 12px;
-  }
-
-  .contact .container {
-    max-width: 275px;
-  }
-
-  .btn--email,
-  .btn--telegram,
-  .btn--instagram {
-    width: 180px;
-  }
-
-  /* бургер меню*/
   .menu-icon {
     width: 36px;
     height: 24px;
@@ -581,14 +547,6 @@ video::-webkit-media-controls-enclosure {
     display: block;
     background-color: transparent;
     padding: 0;
-  }
-
-  .header .container {
-    justify-content: flex-end;
-  }
-
-  .header .container > .logo {
-    margin-right: auto;
   }
 
   .menu-icon::after,
@@ -656,32 +614,64 @@ video::-webkit-media-controls-enclosure {
   }
 }
 
-@media (max-width: 460px) {
-  .listing__img-wrapper {
-    width: 180px;
+/* ===== ДО 768px: великий телефон ===== */
+@media (max-width: 767px) {
+  .welcome__title {
+    font-size: 36px;
+  }
+
+  .footer .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 28px;
+    padding: 8px 0;
   }
 }
 
-@media (max-width: 420px) {
+/* ===== ДО 576px: телефон ===== */
+@media (max-width: 575px) {
+  :root {
+    --space-xxl: 80px;
+  }
+
+  .welcome__img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .welcome__title {
+    font-size: 26px;
+  }
+
+  .title,
+  .listing__title {
+    font-size: 28px;
+  }
+
+  /* НОВЕ: мініатюри завжди по дві в ряд */
+  .listing__wrapper {
+    gap: var(--space-m);
+  }
+
   .listing__img-wrapper {
-    width: 150px;
+    width: calc((100% - var(--space-m)) / 2);
   }
 
   .item-label {
     font-size: 18px;
   }
 
-  .welcome__title {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 360px) {
-  .listing__img-wrapper {
-    width: 127px;
+  .contact__title {
+    margin-bottom: 12px;
   }
 
-  .item-label {
-    font-size: 17px;
+  .contact .container {
+    max-width: 275px;
+  }
+
+  .btn--email,
+  .btn--telegram,
+  .btn--instagram {
+    width: 180px;
   }
 }
