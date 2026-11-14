@@ -536,7 +536,7 @@ video::-webkit-media-controls-enclosure {
   }
 
   /* бургер меню — тепер з планшета */
-   .header__nav {
+  .header__nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -555,13 +555,11 @@ video::-webkit-media-controls-enclosure {
       visibility 0.4s;
   }
 
-
-    .header .container {
+  .header .container {
     justify-content: flex-end;
     flex-wrap: wrap;
     row-gap: 0;
   }
-
 
   .header .container > .logo {
     margin-right: auto;
@@ -632,13 +630,12 @@ video::-webkit-media-controls-enclosure {
       transform 0.3s 0.3s;
   }
 
-    .header--mobile .header__nav {
+  .header--mobile .header__nav {
     max-height: 500px;
     margin-top: var(--space-s);
     opacity: 1;
     visibility: visible;
   }
-
 
   /* мова — всередині відкритого меню */
   .lang-switcher {
@@ -665,7 +662,6 @@ video::-webkit-media-controls-enclosure {
     opacity: 1;
     visibility: visible;
   }
-
 
   .header--mobile .lang-dropdown {
     top: 100%;
