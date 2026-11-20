@@ -21,6 +21,7 @@
     <title>Zavirshovani</title>
     <link rel="icon" href="../image/anim.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/pages.css" type="text/css" />
   </head>
 
   <body>
@@ -55,7 +56,12 @@
           <a href="vivienmort.html" id="vivienmort">Vivien Mort</a>
         </nav>
 
-        <button class="menu-icon" type="button" aria-label="Меню" aria-expanded="false">
+        <button
+          class="menu-icon"
+          type="button"
+          aria-label="Меню"
+          aria-expanded="false"
+        >
           <span class="menu-icon__line"></span>
         </button>
       </div>
@@ -68,24 +74,46 @@
 
           <div class="screenshots-wrapper">
             <figure>
-              <img
-                src="../image/zavirshovani/krapka_1.jpg"
-                alt="Контурний малюнок людини, яка тримається за голову в паніці серед хаотичних білих ліній."
-                data-i18n-alt="alt_zavirshovani_1"
-              />
-              <img
-                src="../image/zavirshovani/krapka_2.jpg"
-                alt="Налякане обличчя з широкими очима та відкритим ротом у крику."
-                data-i18n-alt="alt_zavirshovani_2"
-              />
-              <img
-                src="../image/zavirshovani/krapka_3.jpg"
-                alt="Метафора втечі, розщеплення особистості або стрімкого плину часу, передана через шлейф ліній та розмиті контури облич персонажів."
-                data-i18n-alt="alt_zavirshovani_3"
-              />
               <figcaption class="item-label">
                 <h3 data-i18n="z_kck">Крапка чи кома</h3>
               </figcaption>
+              <div class="carousel carousel--vertical">
+                <button
+                  class="carousel__arrow carousel__arrow--prev"
+                  type="button"
+                  aria-label="Попередній кадр"
+                >
+                  &lt;
+                </button>
+
+                <div class="carousel__track">
+                  <img
+                    class="carousel__slide"
+                    src="../image/zavirshovani/krapka_1.jpg"
+                    alt="Контурний малюнок людини, яка тримається за голову в паніці серед хаотичних білих ліній."
+                    data-i18n-alt="alt_zavirshovani_1"
+                  />
+                  <img
+                    class="carousel__slide"
+                    src="../image/zavirshovani/krapka_2.jpg"
+                    alt="Налякане обличчя з широкими очима та відкритим ротом у крику."
+                    data-i18n-alt="alt_zavirshovani_2"
+                  />
+                  <img
+                    class="carousel__slide"
+                    src="../image/zavirshovani/krapka_3.jpg"
+                    alt="Метафора втечі, розщеплення особистості або стрімкого плину часу, передана через шлейф ліній та розмиті контури облич персонажів."
+                    data-i18n-alt="alt_zavirshovani_3"
+                  />
+                </div>
+                <button
+                  class="carousel__arrow carousel__arrow--next"
+                  type="button"
+                  aria-label="Наступний кадр"
+                >
+                  &gt;
+                </button>
+              </div>
             </figure>
           </div>
           <div class="item-label">
@@ -115,5 +143,6 @@
     <script src="../js/works.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/lang.js" defer></script>
+    <script src="../js/carousel.js"></script>
   </body>
 </html>

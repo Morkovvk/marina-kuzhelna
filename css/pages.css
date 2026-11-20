@@ -17,10 +17,17 @@
 .carousel {
   position: relative;
   overflow: hidden;
-  padding: var(--space-l) 0;
+  width: 100%;
+  padding: 0;
   --slide-width: 520px;
   --slide-height: 390px;
   --slide-offset: 360px;
+}
+
+.carousel--vertical {
+  --slide-width: 240px;
+  --slide-height: 427px;
+  --slide-offset: 220px;
 }
 
 .carousel__track {
@@ -111,6 +118,12 @@
     --slide-offset: 170px;
   }
 
+  .carousel--vertical {
+    --slide-width: 150px;
+    --slide-height: 267px;
+    --slide-offset: 110px;
+  }
+
   .carousel__arrow {
     width: 36px;
     height: 36px;
@@ -123,5 +136,31 @@
 
   .carousel__arrow--next {
     right: 4px;
+  }
+
+  .btn {
+   margin: 0 auto var(--space-xl);
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel--vertical .carousel__track {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-s);
+    height: auto;
+  }
+
+  .carousel--vertical .carousel__slide {
+    position: static;
+    width: 200px;
+    height: auto;
+    transform: none;
+    opacity: 1;
+    cursor: default;
+  }
+
+  .carousel--vertical .carousel__arrow {
+    display: none;
   }
 }

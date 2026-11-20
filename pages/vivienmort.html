@@ -21,6 +21,7 @@
     <title>Vivien Mort</title>
     <link rel="icon" href="../image/anim.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/pages.css" type="text/css" />
   </head>
 
   <body>
@@ -55,7 +56,12 @@
           <a href="vivienmort.html" id="vivienmort">Vivien Mort</a>
         </nav>
 
-        <button class="menu-icon" type="button" aria-label="Меню" aria-expanded="false">
+        <button
+          class="menu-icon"
+          type="button"
+          aria-label="Меню"
+          aria-expanded="false"
+        >
           <span class="menu-icon__line"></span>
         </button>
       </div>
@@ -68,24 +74,46 @@
 
           <div class="screenshots-wrapper">
             <figure>
-              <img
-                src="../image/vivien_mort/gotuka_1.jpg"
-                alt="Візуальна метафора тотального стеження, цензури, параної та шпигунства, де фігури з газетами оточені безліччю пильних очей."
-                data-i18n-alt="alt_vivienmort_1"
-              />
-              <img
-                src="../image/vivien_mort/gotuka_2.jpg"
-                alt="Контурний малюнок скелета без голови, який сидить за столом перед порожньою тарілкою."
-                data-i18n-alt="alt_vivienmort_2"
-              />
-              <img
-                src="../image/vivien_mort/gotuka_3.jpg"
-                alt="Фігура людини в пальто сидить спиною до глядача на стільці й грає на фортепіано, але у персонажа повністю відсутня голова."
-                data-i18n-alt="alt_vivienmort_3"
-              />
               <figcaption class="item-label">
                 <h3 data-i18n="v_gotyka">Готика</h3>
               </figcaption>
+              <div class="carousel carousel--vertical">
+                <button
+                  class="carousel__arrow carousel__arrow--prev"
+                  type="button"
+                  aria-label="Попередній кадр"
+                >
+                  &lt;
+                </button>
+
+                <div class="carousel__track">
+                  <img
+                    class="carousel__slide"
+                    src="../image/vivien_mort/gotuka_1.jpg"
+                    alt="Візуальна метафора тотального стеження, цензури, параної та шпигунства, де фігури з газетами оточені безліччю пильних очей."
+                    data-i18n-alt="alt_vivienmort_1"
+                  />
+                  <img
+                    class="carousel__slide"
+                    src="../image/vivien_mort/gotuka_2.jpg"
+                    alt="Контурний малюнок скелета без голови, який сидить за столом перед порожньою тарілкою."
+                    data-i18n-alt="alt_vivienmort_2"
+                  />
+                  <img
+                    class="carousel__slide"
+                    src="../image/vivien_mort/gotuka_3.jpg"
+                    alt="Фігура людини в пальто сидить спиною до глядача на стільці й грає на фортепіано, але у персонажа повністю відсутня голова."
+                    data-i18n-alt="alt_vivienmort_3"
+                  />
+                </div>
+                <button
+                  class="carousel__arrow carousel__arrow--next"
+                  type="button"
+                  aria-label="Наступний кадр"
+                >
+                  &gt;
+                </button>
+              </div>
             </figure>
           </div>
           <div class="item-label">
@@ -121,5 +149,6 @@
     <script src="../js/works.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/lang.js" defer></script>
+    <script src="../js/carousel.js"></script>
   </body>
 </html>

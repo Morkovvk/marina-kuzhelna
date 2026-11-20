@@ -1,6 +1,4 @@
-const carousel = document.querySelector(".carousel");
-
-if (carousel) {
+function initCarousel(carousel) {
   const slides = carousel.querySelectorAll(".carousel__slide");
   const prevBtn = carousel.querySelector(".carousel__arrow--prev");
   const nextBtn = carousel.querySelector(".carousel__arrow--next");
@@ -57,3 +55,5 @@ if (carousel) {
 
   render();
 }
+
+document.querySelectorAll(".carousel").forEach(initCarousel);
