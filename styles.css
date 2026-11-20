@@ -318,20 +318,11 @@ h3 {
   margin-block: var(--space-xl) var(--space-s);
 }
 
-.screenshots-wrapper img {
-  /* Ці стилі застосовуються до кожного зображення в сітці */
-  width: 250px;
-  height: auto;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-
 .screenshots-wrapper figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  width: 100%;
   gap: var(--space-s);
   margin: 0;
 }

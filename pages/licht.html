@@ -21,11 +21,11 @@
     <title>Licht</title>
     <link rel="icon" href="../image/anim.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/pages.css" type="text/css" />
   </head>
 
   <body>
     <header class="header hidden">
-      <!-- NAVBAR -->
       <div class="container">
         <a
           href="../index.html"
@@ -74,24 +74,46 @@
 
           <div class="screenshots-wrapper">
             <figure>
-              <img
-                src="../image/licht/faite_1.jpg"
-                alt="Контурний малюнок людини, що біжить на фоні музичної студії з інструментами."
-                data-i18n-alt="alt_licht_1"
-              />
-              <img
-                src="../image/licht/faite_2.jpg"
-                alt="Контурний малюнок стосу газет із заголовками та силуетом, який співає в мікрофон на першій шпальті."
-                data-i18n-alt="alt_licht_2"
-              />
-              <img
-                src="../image/licht/faite_3.jpg"
-                alt="Векторний арт у стилі мінімалізму: білий силует монітора, з якого в лівий бік тягнеться довга яскраво-червона смуга на суцільному чорному фоні."
-                data-i18n-alt="alt_licht_3"
-              />
               <figcaption class="item-label">
                 <h3>Faite à deux</h3>
               </figcaption>
+              <div class="carousel carousel--vertical">
+                <button
+                  class="carousel__arrow carousel__arrow--prev"
+                  type="button"
+                  aria-label="Попередній кадр"
+                >
+                  &lt;
+                </button>
+
+                <div class="carousel__track">
+                  <img
+                    class="carousel__slide"
+                    src="../image/licht/faite_1.jpg"
+                    alt="Контурний малюнок людини, що біжить на фоні музичної студії з інструментами."
+                    data-i18n-alt="alt_licht_1"
+                  />
+                  <img
+                    class="carousel__slide"
+                    src="../image/licht/faite_2.jpg"
+                    alt="Контурний малюнок стосу газет із заголовками та силуетом, який співає в мікрофон на першій шпальті."
+                    data-i18n-alt="alt_licht_2"
+                  />
+                  <img
+                    class="carousel__slide"
+                    src="../image/licht/faite_3.jpg"
+                    alt="Векторний арт у стилі мінімалізму: білий силует монітора, з якого в лівий бік тягнеться довга яскраво-червона смуга на суцільному чорному фоні."
+                    data-i18n-alt="alt_licht_3"
+                  />
+                </div>
+                <button
+                  class="carousel__arrow carousel__arrow--next"
+                  type="button"
+                  aria-label="Наступний кадр"
+                >
+                  &gt;
+                </button>
+              </div>
             </figure>
           </div>
           <div class="item-label">
@@ -120,5 +142,6 @@
     <script src="../js/works.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/lang.js" defer></script>
+    <script src="../js/carousel.js"></script>
   </body>
 </html>
